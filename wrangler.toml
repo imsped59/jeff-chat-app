@@ -1,0 +1,12 @@
+name = "jeffs-talk-app"
+main = "src/index.js"
+compatibility_date = "2025-12-18"
+
+assets = { directory = "./public" }
+
+[durable_objects]
+bindings = [{ name = "CHAT_ROOM", class_name = "ChatRoom" }]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatRoom"]
